@@ -1,0 +1,133 @@
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+}
+
+body{
+  background: #000;
+}
+
+.welcome_blade{
+  display: flex;
+}
+
+.navigation{
+  margin-top: 10px;
+  width: 420px;
+  height: 156px;
+  background: #121212;
+  border-radius: 8px;
+}
+
+.navigation_home{
+  display: flex;
+  cursor: pointer;
+  height: 45px;
+}
+
+.navigation_title{
+  color: #9999;
+  font-size: 18px;
+  /*margin: 30px 5px;*/
+  margin: 16px 0;
+}
+
+.fa-house{
+  color: #888888;
+  font-size: 24px;
+  /*margin: 24px 15px;*/
+  margin: 10px 15px;
+}
+
+.navigation_search{
+  margin-top: 20px;
+  display: flex;
+  cursor: pointer;
+}
+
+.fa-magnifying-glass{
+  color: #888888;
+  font-size: 24px;
+  margin: 10px 15px;
+}
+
+.search_title{
+  color: #9999;
+  font-size: 18px;
+  margin: 12px 5px;
+}
+
+iframe{
+  margin: 10px;
+  width: 1450px;
+  height: 907px;
+}
+
+.playlists{
+  margin-top: 10px;
+  width: 420px;
+  height: 740px;
+  background: #121212;
+  border-radius: 8px;
+}
+
+.playlist_cart{
+  padding: 20px 20px;
+  display: flex;
+  cursor: pointer;
+}
+
+.playlist_cart:hover,
+.navigation_home:hover,
+.navigation_search:hover{
+  background: rgba(76, 76, 76, 0.4);
+  border-radius: 12px;
+}
+
+.active{
+  background: rgba(76, 76, 76, 0.4);
+  border-radius: 12px;
+}
+
+.playlist_img img{
+  border-radius: 8px;
+}
+
+.playlist_about{
+  margin: 5px 13px;
+}
+
+.playlists_title{
+  color: #888888;
+  font-size: 18px;
+}
+
+.playlists_subTitle{
+  color: #7777;
+}
+
+@media (max-width: 1200px) {
+  iframe{
+    width: 750px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome_blade{
+    display: block;
+  }
+
+  .playlists,
+  .navigation{
+    display: none;
+  }
+
+  #output{
+    margin: 10px -7px;
+  }
+  iframe{
+    width: 460px;
+  }
+}
